@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: lightgrey;
+   
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+header .logo {
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #f0db4f;
+}
+
+section {
+    padding: 10px;
+    /* margin-top: 40px; */
+}
+#about{
+
+    margin-top: 90px;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about-content img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 2rem;
+}
+
+.about-content p {
+    max-width: 600px;
+}
+
+#skills ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#skills ul li {
+    background: #f0db4f;
+    color: #333;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.project {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.project a {
+    display: inline-block;
+    margin: 0.5rem;
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.project a:hover {
+    color: #f0db4f;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+.contact{
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .about-content img {
+        margin: 0 0 1rem 0;
+    }
+}
+
+    
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="logo">My Portfolio</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="img/WhatsApp Image 2024-07-23 at 12.36.48_7bfe29dd.jpg" alt="Profile Picture">
+                <p>Hello! I'm a front-end developer with a passion for creating beautiful and responsive websites. With experience in HTML, CSS, and JavaScript, I enjoy building user-friendly interfaces and bringing designs to life.
+
+                    I focus on crafting clean, efficient code and ensuring that my websites work well on all devices. Whether it's a personal project or a professional assignment, I take pride in delivering high-quality work that meets the needs of users.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Git</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Personal Portfolio Website</h3>
+                <p>Designed and developed a responsive portfolio website using HTML, CSS, and JavaScript.
+                    Showcased projects and professional experience with interactive UI components.</p>
+                <a href="https://kaviyazhaganr.github.io/project-two/" target="_blank">Live Demo</a>
+                <a href="https://github.com/kaviyazhaganr/project-two" target="_blank">Source Code</a>
+            </div>
+            <div class="project">
+                <h3>Personal Portfolio Website</h3>
+                <p>Designed and developed a responsive portfolio website using HTML, CSS, and JavaScript.
+                    Showcased projects and professional experience with interactive UI components.</p>
+                <a href="https://kaviyazhaganr.github.io/project-three/" target="_blank">Live Demo</a>
+                <a href="https://github.com/kaviyazhaganr/project-three" target="_blank">Source Code</a>
+            </div>
+            <div class="project">
+                <h3>React Projects</h3>
+                <p>Developed a full-featured React application for managing tasks.
+                    Utilized modern React hooks and context for state management.
+                    Implemented responsive design using CSS-in-JS. </p>
+                <a href="https://kaviyazhaganr.github.io/Reactui1/" target="_blank">Live Demo</a>
+                <a href="https://github.com/kaviyazhaganr/Reactui1" target="_blank">Source Code</a>
+            </div>
+            <div class="project">
+                <h3>React Projects</h3>
+                <p>Developed a full-featured React application for managing tasks.
+                    Utilized modern React hooks and context for state management.
+                    Implemented responsive design using CSS-in-JS. </p>
+                <a href="https://kaviyazhaganr.github.io/reactapp/" target="_blank">Live Demo</a>
+                <a href="https://github.com/kaviyazhaganr/reactapp" target="_blank">Source Code</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div class="container project ">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:rkaviyazhagan@gmail.com">example@example.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/kaviyazhagan-r-7791bb312/" target="_blank">linkedin.com/in/example</a></p>
+           
+        </div>
+    </section>
+    
+    <footer>
+       
+    </footer>
+    
+  
+</body>
+</html>
